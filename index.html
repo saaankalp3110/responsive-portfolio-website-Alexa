@@ -5,63 +5,153 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--==================== UNICONS ====================-->
-        
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
         
         <!--==================== SWIPER CSS ====================-->
         <link rel="stylesheet" href="">
         
         <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="assets/css/styles.css">
 
         <title>Responsive Portfolio Website</title>
     </head>
     <body>
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
-            
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Blob</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                      <li class="nav__item">
+                        <a href="#home" class="nav__link">
+                          <i class="uil uil-estate nav__icon"></i> Card
+                        </a>
+                      </li>
+                  
+                      <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                          <i class="uil uil-user nav__icon"></i> Highlights
+                        </a>
+                      </li>
+                  
+                      <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                          <i class="uil uil-message nav__icon"></i> Reasons
+                        </a>
+                      </li>
+                    </ul>
+                  
+                    <!-- ✅ Fixed close icon -->
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                  </div>
+                  
+
+                <div class="nav__btns">
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps nav__icon"></i>
+                    </div>
+                </div>
+                
+            </nav>
         </header>
 
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                
-            </section>
+        <!--==================== HOME ====================-->
+        <h2 class="section__title">From flap to blob</h2>
 
+        <div class="home__container container">
+          <!-- Folder Cards -->
+          <div class="letter__folders">
+            <button class="letter__tab" onclick="showLetter('anniversary')">6-months</button>
+            <button class="letter__tab" onclick="showLetter('birthday')">22!!!</button>
+          </div>
+        
+          <!-- Letter Content Box -->
+          <div class="home__letter-box">
+            <p class="home__letter" id="letter-content">
+              <!-- Default letter shown -->
+              First of all, happy 6 months to us being together. Every moment I’m with you, I just wish it could last even longer.<br><br>
+        
+              There’s sooo many things I wanna try with you — arcades, hopefully night drives sometime, definitely diving (I seriously can’t wait to see you swim in real life). It’s wild ‘cause we’ve done so much already but also like… so little? It’s kinda crazy.<br><br>
+        
+              Thinking back on how everything led up to us is so cute. Like, the number of things that had to happen the exact way they did for us to end up here — it’s insane, and honestly, it makes this feel so special.<br><br>
+        
+              Fav pastime? Looking at your pics.<br>
+              Fav thing to look forward to? Being with you.<br>
+              Fav time I have? When I’m with you.<br><br>
+        
+              Being with you makes me wanna be better, you know? Like I wanna cook better food, be smarter, maybe even try my hand at random new things — just so you can be proud of having me as your boyfriend.<br><br>
+        
+              So… here’s to half a year, and sooo many more to come.<br>
+              Love you.
+            </p>
+          </div>
+        </div>      
+  
+            
+  
+              
             <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                
+<section class="about section" id="about">
+    <h2 class="section__title">HIGHLIGHTS WOOOOO</h2>
+  
+    <div class="about__container container grid">
+      <img src="assets/img/about.jpg" alt="About Me Photo" class="about__img" />
+  
+      <div class="about__data">
+        <p class="about__description">
+          There are sooooo many great stuff we have done together but these I figured deserved a special mention:
+        </p>
+  
+        <div class="about__info">
+          <div><span class="about__info-title">Night Walks</span></div>
+          <div><span class="about__info-title">CODM</span></div>
+          <div><span class="about__info-title">CEDAR Point</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+           <!--==================== LOVE ====================-->
+            <section class="love section" id="love">
+                <h2 class="section__title">Reasons I LOVE YOU</h2>
+            
+                <div class="about__container container grid">
+                <img src="assets/img/prisha.jpg" alt="About Me Photo" class="about__img" />
+            
+                <div class="about__data">
+                    <p class="about__description">
+                    What's there not to like?
+                    </p>
+            
+                    <div class="about__info love__traits">
+                    <div><span class="about__info-title"><i class="uil uil-heart"></i> Smart</span></div>
+                    <div><span class="about__info-title"><i class="uil uil-heart"></i> Funny</span></div>
+                    <div><span class="about__info-title"><i class="uil uil-heart"></i> Pretty</span></div>
+                    <div><span class="about__info-title"><i class="uil uil-heart"></i> Your Smile</span></div>
+                    <div><span class="about__info-title"><i class="uil uil-heart"></i> BLOBBI</span></div>
+                    <div><span class="about__info-title"><i class="uil uil-heart"></i> Space Talk</span></div>
+                    <div><span class="about__info-title"><i class="uil uil-heart"></i> Your Walk</span></div>
+                    </div>
+                </div>
+                </div>
             </section>
-
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
-
+            
+            
+            <section class="gallery section" id="gallery">
+              <h2 class="section__title">Memories Gallery</h2>
+              <div class="gallery__container">
+                <img src="assets/img/img1.jpg" class="gallery__photo hidden" />
+                <img src="assets/img/img2.jpg" class="gallery__photo hidden" />
+                <img src="assets/img/img3.jpg" class="gallery__photo hidden" />
+                <img src="assets/img/img4.jpg" class="gallery__photo hidden" />
+                <!-- Add as many as you want -->
+              </div>
             </section>
-
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section">
-
-            </section>
-
-            <!--==================== SERVICES ====================-->
-            <section class="services section" id="services">
-                
-            </section>
-
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                
-            </section>
-
-            <!--==================== PROJECT IN MIND ====================-->
-            <section class="project section">
-
-            </section>
-
-            <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section">
-                
-            </section>
+            
+            
 
             <!--==================== CONTACT ME ====================-->
             <section class="contact section" id="contact">
@@ -75,12 +165,15 @@
         </footer>
         
         <!--==================== SCROLL TOP ====================-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+          </a>
+          
         
-
         <!--==================== SWIPER JS ====================-->
         <script src=""></script>
 
         <!--==================== MAIN JS ====================-->
-        <script src=""></script>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
